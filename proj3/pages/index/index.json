@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Flood":"/components/Flood/Flood",
+    "RoundPlay":"/components/RoundPlay/RoundPlay",
+    "Footer":"/components/Footer/Footer"
+  }
+}

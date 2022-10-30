@@ -1,0 +1,41 @@
+<!--components/Flood/Flood.wxml-->
+<view class="container" style="margin-top:50rpx">
+    <view id="left" class="left">
+    <view style="margin-bottom:20rpx;" wx:for="{{leftList}}">
+      <view id="{{item.id}}"class="present" bindtap="detailPage">
+      <view class="namebackground"></view>
+      <text class="name">{{item.name}}</text>
+        <image src="{{item.url}}" mode='widthFix' ></image>
+        <view style="height: 8rpx;"></view>
+        <view class="detail">
+        <text class="school">{{item.school}}</text>
+        <text class="time">{{item.time}}</text>
+        </view>
+        <view style="height: 10rpx;"></view>
+        <view class="describe">
+          <text style="position:relative;left:2%;">{{item.describe}}</text>
+        </view>
+        <view style="height: 10rpx;"></view>
+      </view>
+    </view>
+  </view>
+  <view id="right" class="right">
+    <view style="margin-bottom:20rpx;" wx:for="{{rightList}}">
+      <view id="{{item.id}}" class="present" bindtap="detailPage">
+      <view class="namebackground"></view>
+      <text class="name">{{item.name}}</text>
+        <image src="{{item.url}}" mode='widthFix'></image>
+        <view style="height: 8rpx;"></view>
+        <view class="detail">
+        <text class="school">{{item.school}}</text>
+        <text class="time">{{item.time}}</text>
+        </view>
+        <view style="height: 10rpx;"></view>
+        <view class="describe">
+          <text style="position:relative;left:2%;">{{item.describe}}</text>
+        </view>
+        <view style="height: 10rpx;"></view>
+      </view>
+    </view>
+  </view>
+</view>

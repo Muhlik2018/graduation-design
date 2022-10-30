@@ -1,0 +1,32 @@
+<!--components/RoundPlay/RoundPlay.wxml-->
+<view class='container' style="background-image: url('{{url}}'); background-size: cover; background-repeat: no-repeat; height:1000rpx">
+
+<view style="position: absolute; top:430rpx; left:2%;background-image:url(/Assets/LeftArrow.svg);background-size: cover; height: 60rpx;width: 30rpx; z-index: 1;" bindtap="leftImg"></view>
+<view style="position: absolute; top:430rpx; right:2%;background-image:url(/Assets/RightArrow.svg);background-size: cover; height: 60rpx;width: 30rpx; z-index: 1;" bindtap="rightImg"></view>
+
+<view class='name'>
+<view class="containBox" style="height: 200rpx; background: linear-gradient(180deg, rgba(22, 27, 37, 0.006) 0%, rgba(208, 216, 232, 0.6) 100%); mix-blend-mode: normal;transform: matrix(1, 0, 0, -1, 0, 0);">
+<text style="font-family: 'Croissant One'; font-size: 40rpx; color:#FFFFFF;font-weight: 800; position: relative; top:-10%;transform: matrix(1, 0, 0, -1, 0, 0);">Fleter</text>
+</view>
+<view style="height: 50rpx; "></view>
+
+<view class="containBox" style="height: 200rpx; width:80%;margin-left: auto;margin-right: auto;width:80%; border-bottom: 2px solid #FFFFFF; ">
+<text style="position: relative; top:10%;font-family: 'Playball'; font-style: normal; font-weight: 200; font-size: 50rpx; color:#FFFFFF; text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);">实验名称\n{{name}}</text>
+</view>
+<view class="containBox" style="height: 100rpx; width:80%;margin-left: auto;margin-right: auto;">
+<text style="position: relative; top:10%;font-family: 'Bangers'; font-style: normal; font-weight: 200; font-size: 30rpx; color:#FFFFFF; text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);">{{time}}\n{{school}}</text>
+</view>
+<view style="height: 50rpx;"></view>
+<view class="containBox" style="height: 100rpx; width:60%;margin-left: auto;margin-right: auto;background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, #FFFFFF 73.44%);box-shadow: 0px 1rpx 6rpx rgba(0, 0, 0, 0.1);border-radius: 10rpx;"bindtap="detailPage">
+<text style="position: relative; top:30%;font-family: 'Bangers'; font-style: normal; font-weight: 200; font-size: 30rpx; color:#000000;">查看研究</text>
+</view>
+<view class="containBox" style="height: 300rpx; width:100%;background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, #FFFFFF 100%);mix-blend-mode: normal;">
+    <text style="position: relative; top:80%;font-family: 'Bangers'; font-style: normal; font-weight: 200; font-size: 25rpx; color:#949494;">下滑查看更多\n|</text>
+</view>
+</view>
+
+
+
+
+</view>
+

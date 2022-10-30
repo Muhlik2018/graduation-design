@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<RoundPlay list='{{imgData}}' jumpTo='../search/search'></RoundPlay>
+<view style="position: relative;width:94%;left:3%">
+<Flood list='{{imgData}}' jumpTo='../index/index'></Flood>
+</view>
+<Footer focus='0' emphasisColor= '#FF961C' normalColor= '#606892'></Footer>
+
+

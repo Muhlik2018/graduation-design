@@ -1,0 +1,67 @@
+/* components/Footer/Footer.wxss */
+.footer{
+	overflow:hidden;
+	margin-bottom:0;
+	background:#f0eff5;
+    width:100%;
+    height:20%;
+	position:fixed;
+	bottom:0px;
+	display:flex;
+    justify-content:center;
+    height:50px;
+    border-top-right-radius: 20rpx;
+    border-top-left-radius: 20rpx;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 54.69%);
+    box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navMain{
+    position: relative;
+    top:20%;
+    width: 30%;
+    height:40rpx;
+    text-align: center;
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30rpx;
+    /* identical to box height, or 50% */    
+    text-transform: capitalize;
+    border-right:solid 1rpx #606892;
+}
+
+.navSearch{
+    position: relative;
+    top:20%;
+    width:40%;
+    height:40rpx;
+    text-align: center;
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30rpx;
+    /* identical to box height, or 50% */
+    border-right:solid 1rpx #606892;
+
+    text-transform: capitalize;
+    
+}
+
+.navSelf{
+    position: relative;
+    top:20%;
+    width:30%;
+    text-align: center;
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30rpx;
+    /* identical to box height, or 50% */
+    
+    text-transform: capitalize;
+    
+}

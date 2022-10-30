@@ -1,0 +1,51 @@
+<!--pages/search/search.wxml-->
+<view>
+<view style="height: 200rpx;">
+<view class="inputContainer">
+    <input class="input"  placeholder=" Search"/>
+    <view class="serachImg">
+    <view style="position: relative;height: 50%;top:25%; left:25%;width: 50%;background-image: url(/Assets/Search.svg);background-size: 100%;"></view>
+    </view>
+</view>
+<view class="functionBar">
+<view style="height: 80rpx; width: 160rpx; position: relative; top:10%;">
+<view style="position: relative;height: 50%;top:25%; width: 25%;left:10%;background-image: url(/Assets/Group7071.svg);background-size: 100%; float: left;"></view>
+<view style="float: left; top:10%;height: 80%; width:5%; position:relative; left:15%; border-right: solid #A9BCD3 1rpx;"></view>
+<view style="position: relative;height: 50%;top:25%; width: 20%;left:25%;background-image:url(/Assets/Group7065.svg);background-size: 100%; float: left; "></view>
+
+</view>
+
+</view>
+</view>
+
+<view>
+<view style="height: 150rpx;">
+    <view class="typeSelector">
+    <view class="card" style="left: 0%; background-color: {{floodColor}};" bindtap="clickFlood">
+    <view style="width:60rpx;height: 60rpx;top:20%;left: 25%;position: relative;background-image: url({{floodImg}});background-size: 100%;"></view>
+    </view>
+    <view class="card" style="left: 10%; background-color: {{timeLineColor}};" bindtap="clickTimeLine">
+    <view style="width:40rpx;height: 70rpx;top:15%;left: 35%;position: relative;background-image: url({{timeLineImg}});background-size: 100%; background-repeat: no-repeat;"></view>
+    </view>
+    <view class="card" style="left: 20%; background-color: {{mapColor}};" bindtap="clickMap">
+    <view style="width:60rpx;height: 60rpx;top:20%;left: 25%;position: relative;background-image: url({{mapImg}});background-size: 100%;"></view>
+    </view>
+    
+    </view>
+
+    <view class="newFleter" bindtap="createNew"> 
+        <view style="width:80rpx;height: 80rpx;top:10%;left: 5%;position: relative;background-image: url(/Assets/Add.svg);background-size: 100%; float: left;"></view>   
+        <view style="width:120rpx;height: 80rpx;top:25%;left: 5%;position: relative;float: left;">
+        <text style="font-size: 25rpx;font-family: 'Inter';font-style: normal;font-weight: 600;color: #FFFFFF;"> 发布帖子</text>
+        </view>  
+    </view>
+</view>
+<view style="position: relative;width:94%;left:3%">
+    <Flood list='{{imgData}}' jumpTo='../index/index' style="display: {{floodDisp}};"></Flood>
+    <TimeLine list='{{imgData}}' jumpTo='../index/index' style="display: {{timeLineDisp}};"></TimeLine>
+    <MapAlbum list='{{imgData}}' jumpTo='../index/index' bind:viewChange="viewChange" style="display: {{mapDisp}}"></MapAlbum>
+</view>
+<Footer focus='1' emphasisColor= '#FF961C' normalColor= '#606892'></Footer>
+</view>
+</view>
+

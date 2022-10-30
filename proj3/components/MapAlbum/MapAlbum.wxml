@@ -1,0 +1,32 @@
+<!--components/MapAlbum/MapAlbum.wxml-->
+<view>
+<map
+style="width:100%;height: 1000rpx;"
+markers="{{list}}"
+bindmarkertap="detailCard"
+bindregionchange="viewChange"
+latitude="23.3"
+longitude="113.1"
+>
+</map>
+
+
+    <view class='card' style="display: {{detailDisp}};" id="{{id}}" bindtap="detailPage"> 
+      <view class='textInfo'>
+      <view style="position: relative;width:100%;height: 10%;">
+      <text class='time' style="float: left;">{{time}}</text>
+      </view>
+      <view style="clear: both;"></view>
+        <view class='title' style="position: relative;height: 25%;">{{name}}</view>
+        <view class='describe' style="position: relative;height: 50%; border-bottom: solid 1rpx #B9B9B9;">{{describe}}</view>
+        <text class='school'>{{school}}</text> 
+      </view>
+
+      <view class='graphic'>
+      <image style="position: relative; width:100%;height: 100%; border-radius: 30rpx;" src="{{url}}" mode="aspectFill"></image>
+      </view>
+
+      </view>
+
+
+</view>

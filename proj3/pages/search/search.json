@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Flood":"/components/Flood/Flood",
+    "Footer":"/components/Footer/Footer",
+    "TimeLine":"/components/TimeLine/TimeLine",
+    "MapAlbum":"/components/MapAlbum/MapAlbum"
+  }
+}

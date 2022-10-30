@@ -1,0 +1,12 @@
+<!--components/Footer/Footer.wxml-->
+<view class='.footer'>
+	<view class='navMain'>
+    <text style="color: {{mainColor}};">首页</text>
+	</view>
+	<view class='navSearch'>
+        <text style="color: {{searchColor}};">华园研究</text>
+	</view>
+	<view class='navSelf'>
+        <text style="color: {{selfColor}};">我</text>
+	</view>
+</view>
